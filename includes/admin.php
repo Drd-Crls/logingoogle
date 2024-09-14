@@ -12,7 +12,7 @@
 
 
 
-    <h1>ladmin caralhudoi</h1>
+    <h1>admin</h1>
 
     <p>Ola, <?php echo $nome ?> seja bem vindo</p>
 
