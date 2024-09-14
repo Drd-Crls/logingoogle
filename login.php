@@ -8,11 +8,11 @@
 
 
 
-    //VALIDACAO PRIUMARIA DO COOKIE
+    //VALIDACAO PRIMARIA DO COOKIE
     //verifica os campos obrigatorios
     if(!isset($_POST['credential']) || !isset($_POST['g_csrf_token'])){
         header('location: index.php');
-        echo 'bct';
+        echo 'erro';
     }
 
     //pegandpo o cookie
@@ -20,7 +20,7 @@
 
     if ($_POST['g_csrf_token'] != $cookie){
         header('location: index.php');
-        echo 'bct';
+        echo 'erro';
     }
 
 
